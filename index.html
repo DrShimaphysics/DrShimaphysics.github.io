@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Shimasadat Asnafi | Physics Courses with Dr. Shima
+
+  <style>
+    :root {
+      --navy: #102a43;
+      --blue: #176b87;
+      --light-blue: #eaf4f7;
+      --gold: #e8b44c;
+      --text: #243b53;
+      --muted: #627d98;
+      --white: #ffffff;
+      --background: #f7fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--background);
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    nav {
+      background: var(--white);
+      border-bottom: 1px solid #d9e2ec;
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+    }
+
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-weight: bold;
+      color: var(--navy);
+      font-size: 1.1rem;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 16px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--navy), var(--blue));
+      color: var(--white);
+      padding: 100px 0 85px;
+    }
+
+    .hero-content {
+      max-width: 720px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 1.12;
+      margin: 0 0 18px;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      max-width: 620px;
+      opacity: 0.94;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--gold);
+      color: #1f2933;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 13px 22px;
+      border-radius: 6px;
+      margin-top: 18px;
+    }
+
+    .button:hover {
+      background: #f4c95d;
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    h2 {
+      color: var(--navy);
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+    .intro {
+      max-width: 760px;
+      color: var(--muted);
+    }
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 26px;
+      border-radius: 10px;
+      border: 1px solid #d9e2ec;
+      box-shadow: 0 4px 12px rgba(16, 42, 67, 0.06);
+    }
+
+    .card h3 {
+      color: var(--blue);
+      margin-top: 0;
+    }
+
+    .card p {
+      color: var(--muted);
+    }
+
+    .card a {
+      color: var(--blue);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .about {
+      background: var(--light-blue);
+    }
+
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .contact-box {
+      background: var(--navy);
+      color: var(--white);
+      padding: 42px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .contact-box h2 {
+      color: var(--white);
+    }
+
+    .contact-box p {
+      opacity: 0.9;
+    }
+
+    .contact-box .button {
+      background: var(--gold);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 28px 0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      .nav-content,
+      .two-columns {
+        display: block;
+      }
+
+      nav ul {
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      nav a {
+        margin: 0 12px 0 0;
+      }
+
+      .hero {
+        padding: 70px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="container nav-content">
+      <div class="logo">Dr. Sheema | Physics Courses</div>
+      <div>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+        <a href="#contact">Enroll</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-content">
+      <h1>Learn Physics with Clarity and Depth</h1>
+      <p>
+        Online scientific courses in quantum physics, astrophysics,
+        spectroscopy, and problem-solving for university students and
+        curious independent learners.
+      </p>
+      <a class="button" href="#courses">Explore Courses</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="courses">
+      <div class="container">
+        <h2>Courses</h2>
+        <p class="intro">
+          Carefully structured courses that combine conceptual understanding,
+          mathematical rigor, worked examples, and visual scientific explanations.
+        </p>
+
+        <div class="course-grid">
+          <article class="card">
+            <h3>Quantum Physics Foundations</h3>
+            <p>
+              Build a clear, intuitive foundation in wave functions,
+              uncertainty, operators, and introductory quantum systems.
+            </p>
+            <a href="mailto:shima.asnafi86@gmail.com?subject=Quantum Physics Course">
+              Ask about enrollment →
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Astrophysics for Beginners</h3>
+            <p>
+              Explore stars, galaxies, cosmology, light, and the physical
+              principles used to understand the universe.
+            </p>
+            <a href="mailto:shima.asnafi86@gmail.com.com?subject=Astrophysics Course">
+              Ask about enrollment →
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Spectroscopy & Light</h3>
+            <p>
+              Learn how spectra reveal the composition, temperature, motion,
+              and physical properties of matter and astronomical objects.
+            </p>
+            <a href="mailto:shima.asnafi86@gmail.com?subject=Spectroscopy Course">
+              Ask about enrollment →
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container two-columns">
+        <div>
+          <h2>About Your Instructor</h2>
+          <p>
+            I am Dr. Shimasadat Asnafi, a physicist and educator with a PhD in
+            Physics. My work and teaching interests include quantum field theory,
+            astrophysics, spectroscopy, and photometry.
+          </p>
+          <p>
+            My goal is to make challenging scientific ideas approachable
+            without sacrificing precision or depth.
+          </p>
+        </div>
+
+        <div>
+          <h2>What You Will Receive</h2>
+          <ul>
+            <li>Clearly organized video lessons</li>
+            <li>Scientific visualizations and diagrams</li>
+            <li>Worked problems and explanatory notes</li>
+            <li>Recommended reading and practice resources</li>
+            <li>Direct guidance on course enrollment</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <h2>Ready to Learn?</h2>
+          <p>
+            Contact me to receive course dates, format, price, and enrollment details.
+          </p>
+
+          <!-- Replace this email address with your real one -->
+          <a class="button" href="mailto:shima.asnafi86@gmail.com">
+            Contact Me
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Dr. Shima. All rights reserved.
+  </footer>
+</body>
+</html>
