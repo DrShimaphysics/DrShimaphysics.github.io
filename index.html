@@ -138,6 +138,16 @@
       margin-bottom: 15px;
       display: block;
     }
+    /* Indicates the image is clickable */
+    .card-image {
+      cursor: zoom-in; /* Shows a magnifying glass icon */
+      transition: transform 0.3s ease; /* Makes the hover effect smooth */
+    }
+
+    .card-image:hover {
+      transform: scale(1.02); /* Slightly enlarges the image when hovered */
+      filter: brightness(90%); /* Slightly dims it to show it's active */
+    }
 
     .about {
       background: var(--light-blue);
@@ -218,8 +228,10 @@
 
         <div class="course-grid">
                       <article class="card">
-                        <img src="relativity-teaser.jpg" alt="Special Relativity Course Teaser" class="card-image">
-            <h3>Special Relativity & Spacetime</h3>
+<a href="relativity-teaser.jpg" target="_blank">
+    <img src="relativity-teaser.jpg" alt="Special Relativity Teaser" class="card-image">
+  </a>
+                        <h3>Special Relativity & Spacetime</h3>
             <p>
               Master Einstein's postulates, time dilation, length contraction,
               relativistic momentum, and the physical insight behind $E=mc^2$.
@@ -242,7 +254,9 @@
           </article>
 
           <article class="card">
+            <a href="relativity-teaser.jpg" target="_blank">
             <img src="spectroscopy-teaser.jpg" alt="Spectroscopy Course Teaser" class="card-image">
+            </a>
             <h3>Spectroscopy & Light</h3>
             <p>Learn how spectra reveal the composition and physical properties of matter and stars.</p>
             <a href="mailto:shima.asnafi86@gmail.com">Ask about enrollment →</a>
