@@ -100,54 +100,7 @@
       font-size: 2rem;
       margin-top: 0;
     }
-    .poster-section {
-  margin: 50px 0;
-  padding: 30px;
-  border-radius: 18px;
-  background: linear-gradient(180deg, #0f172a, #111827);
-  color: white;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-.poster-section h2 {
-  margin-bottom: 12px;
-  font-size: 2rem;
-}
-
-.poster-section p {
-  max-width: 800px;
-  margin: 0 auto 20px;
-  line-height: 1.7;
-  color: #d1d5db;
-}
-
-.poster-link {
-  display: block;
-  cursor: zoom-in;
-}
-
-.poster-image {
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 14px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.poster-link:hover .poster-image {
-  transform: scale(1.02);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
-}
-
-.zoom-hint {
-  margin-top: 14px !important;
-  font-size: 0.9rem;
-  color: #a5b4fc !important;
-}
-
+  
 <section class="poster-section">
   <h2>Visual Science for Curious Minds</h2>
   <p>
@@ -254,6 +207,46 @@
       .hero {
         padding: 70px 0;
       }
+    }
+    poster-section {
+      margin: 50px 0;
+      padding: 30px;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #0f172a, #111827);
+      color: white;
+      text-align: center;
+    }
+
+    .poster-section h2 {
+      margin-bottom: 12px;
+      font-size: 2rem;
+    }
+
+    .poster-section p {
+      max-width: 800px;
+      margin: 0 auto 20px;
+      line-height: 1.7;
+      color: #d1d5db;
+    }
+
+    .poster-link {
+      display: block;
+      cursor: zoom-in;
+    }
+
+    .poster-image {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 14px;
+    }
+
+    .zoom-hint {
+      margin-top: 14px !important;
+      font-size: 0.9rem;
+      color: #a5b4fc !important;
     }
   </style>
 </head>
@@ -374,6 +367,32 @@
       </div>
     </section>
   </main>
+     <section class="poster-section">
+      <h2>Visual Science for Curious Minds</h2>
+
+      <p>
+        Explore physics through clear explanations and beautiful scientific visuals.
+      </p>
+
+      <a
+        href="moonsurface-photoelectric.png"
+        target="_blank"
+        rel="noopener"
+        class="poster-link"
+      >
+        <img
+          src="moonsurface-photoelectric.png"
+          alt="Physics courses poster"
+          class="poster-image"
+        >
+      </a>
+
+      <p class="zoom-hint">
+        Click the poster to view it in full size
+      </p>
+    </section>
+  </main>
+
 
   <footer>
     © 2026 Dr. Shimasadat Asnafi. All rights reserved.
